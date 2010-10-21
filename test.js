@@ -30,7 +30,7 @@ fs.readFile('index.html', "ascii", function (err, data) {
   
   console.log();
   console.log("asserting js");
-  assert("global app object exists", typeof window.document.app !== 'undefined');
+  assert("global app object exists", typeof window.app !== 'undefined');
   assert("#tasks is now not visible", $('tasks').style.display == "none");
   
   console.log();
