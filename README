@@ -1,0 +1,8 @@
+Crude testing experiment with jsdom
+
+usage:
+
+* install node.js (http://nodejs.org)
+* install npm (http://github.com/isaacs/npm)
+* install jsdom (npm install jsdom)
+* install colors (npm install colors)
