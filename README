@@ -6,3 +6,6 @@ usage:
 * install npm (http://github.com/isaacs/npm)
 * install jsdom (npm install jsdom)
 * install colors (npm install colors)
+
+
+run: node test.js
