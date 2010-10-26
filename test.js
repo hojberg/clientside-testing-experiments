@@ -5,10 +5,10 @@ var fs = require('fs');
 var assert = function (testCase, funcOrBool) {
   var result = (typeof funcOrBool === 'function' ? funcOrBool() : funcOrBool);
   if (result) {
-    console.log("* " + testCase + " passed!".green);
+    console.log("✔ ".green + testCase);
   }
   else {
-    console.log("* " + testCase + " FAILED!!".red);    
+    console.log("✘ ".red + testCase);
   }
 };
 
@@ -24,12 +24,12 @@ fs.readFile('index.html', "ascii", function (err, data) {
   console.log("RUNNING TESTS ==================================================================".bold.white);
   console.log();
 
-  console.log("asserting html")
+  console.log("asserting html".grey)
   assert("#tasks exists", $('tasks'));
   assert("#tasks is visible", typeof $('tasks').style.display === "undefined");
   
   console.log();
-  console.log("asserting js");
+  console.log("asserting js".grey);
   assert("global app object exists", typeof window.app !== 'undefined');
   assert("#tasks is now not visible", $('tasks').style.display == "none");
   
