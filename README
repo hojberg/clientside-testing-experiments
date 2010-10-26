@@ -5,7 +5,7 @@ usage:
 * install node.js (http://nodejs.org)
 * install npm (http://github.com/isaacs/npm)
 * install jsdom (npm install jsdom)
+* install HTMLParser (npm install htmlparser)
 * install colors (npm install colors)
 
-
-run: node test.js
+to run: node test.js
